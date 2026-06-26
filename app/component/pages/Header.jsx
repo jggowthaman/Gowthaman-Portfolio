@@ -27,13 +27,24 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
   }, []);
 
- const [darkMode, setDarkMode] = useState(false);
+const [darkMode, setDarkMode] = useState(false);
+
+useEffect(() => {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    setDarkMode(true);
+    document.documentElement.classList.add("dark");
+  }
+}, []);
 
 useEffect(() => {
   if (darkMode) {
-    document.documentElement.classList.add('dark');
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
   } else {
-    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
   }
 }, [darkMode]);
 
@@ -58,7 +69,7 @@ useEffect(() => {
         {/* Logo */}
         <a href="#top">
           <Image
-            src={assets.logo}
+            src={darkMode ? assets.logo_dark : assets.logo}
             alt="logo"
             className="w-28 h-auto cursor-pointer"
           />
@@ -89,12 +100,12 @@ useEffect(() => {
         <div className="flex items-center gap-4">
           {/* Theme Button */}
           <button onClick={() => setDarkMode(!darkMode)}>
-            <Image
-              src={darkMode ? assets.sun_icon : assets.moon_icon}
-              alt="theme"
-              className="w-6 cursor-pointer transition-transform duration-300"
-            />
-          </button>
+  <Image
+    src={darkMode ? assets.sun_icon : assets.moon_icon}
+    alt="theme"
+    className="w-6 cursor-pointer transition-transform duration-300"
+  />
+</button>
 
           {/* Contact Button */}
           <a
@@ -103,7 +114,7 @@ useEffect(() => {
           >
             Contact
             <Image
-              src={assets.arrow_icon}
+              src={darkMode ? assets.arrow_icon_dark : assets.arrow_icon}
               alt=""
               className="w-3"
             />
@@ -117,7 +128,7 @@ useEffect(() => {
             }
           >
             <Image
-              src={assets.menu_black}
+              src={darkMode ? assets.menu_white : assets.menu_black} 
               alt="menu"
               className="w-6"
             />
@@ -141,7 +152,7 @@ useEffect(() => {
             }
           >
             <Image
-              src={assets.close_black}
+              src={darkMode ? assets.close_white : assets.close_black}
               alt="close"
               className="w-5"
             />
