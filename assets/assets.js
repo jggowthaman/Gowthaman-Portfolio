@@ -109,13 +109,13 @@ export const project = [
         title: 'Trend Cart',
         description: 'A Multi Service E-Commerce Platform',
         bgImage: '/Trendcart.png',
-        link: 'trend-cart-ecommerce.netlify.app'
+        link: 'https://trend-cart-ecommerce.netlify.app/'
     },
     {
         title: 'Fake News Detection USing AI',
         description: 'Fake News Detection',
         bgImage: '/Fakenews.png',
-        link: ''
+        link: 'https://news-detective.netlify.app/'
     },
 ]
 
