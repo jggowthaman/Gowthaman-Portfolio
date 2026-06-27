@@ -38,7 +38,14 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import mysql from './mysql.png';
 import location from './location.png';
 import locationdark from './locationdark.png';
-
+import send_icon_dark from './send-icon-dark.png';
+import download_dark from './download-dark.png';
+// import Trendcart from './Trendcart.png ';
+// import Charity_Helper from './Charity Helper.png';
+// import Metric_buisness from './Metric Buisness.png';
+// import Sneaky from './Sneaky Restaurent.png';
+// import fakenews from './Fake news detection.png'
+ 
 export const assets = {
     user_image,
     code_icon,
@@ -79,29 +86,46 @@ export const assets = {
     right_arrow_bold_dark,
     mysql,
     location,
-    locationdark
+    locationdark,
+    send_icon_dark,
+    download_dark,
+    // Trendcart,
+    // Charity_Helper,
+    // Metric_buisness,
+    // Sneaky,
+    // fakenews
 };
 
 export const project = [
     {
-        title: 'Frontend project',
-        description: 'Metric Buisness',
+        title: 'Metric Buisness',
+        description: 'A Buisness Website',
         bgImage: '/work-1.png',
+        link: 'https://metric-buisness.onrender.com/'
     },
     {
-        title: 'Bootstrap Project',
-        description: 'Sneaky Restaurant',
+        title: 'Sneaky Restaurant',
+        description: 'Website For Restaurant Book',
         bgImage: '/work-2.png',
+        link: 'https://sneaky-8l1l.onrender.com'
     },
     {
-        title: 'Fullstack Project',
-        description: 'Charity Helper',
+        title: 'Charity Helper',
+        description: 'Donation to charity',
         bgImage: '/work-3.png',
+        link: 'https://charity-helper-3dem.onrender.com/'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Trend Cart',
+        description: 'A Multi Service E-Commerce Platform',
         bgImage: '/work-4.png',
+        link: 'trend-cart-ecommerce.netlify.app'
+    },
+    {
+        title: 'Fake News Detection USing AI',
+        description: 'Fake News Detection',
+        bgImage: '/work-4.png',
+        link: 'news-detective.netlify.app'
     },
 ]
 
