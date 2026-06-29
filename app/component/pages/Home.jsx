@@ -6,7 +6,7 @@ import { assets } from '@/assets/assets';
 
 export default function Home() {
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-0 mt-[180px] sm:mt-10">
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-0 mt-[140px] sm:mt-10 ">
       <div>
         <Image
           src={assets.profile_img}

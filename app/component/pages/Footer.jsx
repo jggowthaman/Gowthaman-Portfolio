@@ -55,7 +55,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-purple-500 dark:text-gray-300"
               >
-                GitHub
+                <i class="bi bi-github"></i>
               </a>
             </li>
 
@@ -66,7 +66,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-purple-500 dark:text-gray-300"
               >
-                LinkedIn
+                <i class="bi bi-linkedin"></i>
               </a>
             </li>
 
@@ -77,8 +77,9 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-purple-500 dark:text-gray-300"
               >
-                Instagram
+                <i class="bi bi-instagram"></i>
               </a>
+              
             </li>
           </ul>
         </div>
